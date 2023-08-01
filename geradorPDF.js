@@ -22,7 +22,7 @@ function Pdf() {
   SpreadsheetApp.flush();
   
   var planilha = SpreadsheetApp.getActiveSpreadsheet();
-  var guia = planilha.getSheetByName("CONTAS A PAGAR");
+  var guia = planilha.getSheetByName("PLANILHA1");
   var range = guia.getRange("A1:I23").activate();
 
   var gid = guia.getSheetId();
